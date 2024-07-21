@@ -1,4 +1,4 @@
-package Module1.L1Exercise2;
+package Module1.L1exercise2;
 
 public class Car {
     private static final String brand = "Ferrari";
