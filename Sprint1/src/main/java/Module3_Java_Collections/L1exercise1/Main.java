@@ -1,4 +1,4 @@
-package Java_Collections.L1exercise1;
+package Module3_Java_Collections.L1exercise1;
 
 import java.util.ArrayList;
 import java.util.HashSet;

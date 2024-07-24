@@ -1,31 +1,25 @@
-package Java_Collections.L2exercise2;
+package Module3_Java_Collections.L1exercise1;
 
 import java.util.Objects;
 
-public class Restaurant {
+public class Month {
     private String name;
-    private int score;
 
-    public Restaurant(String name, int score){
+    public Month(String name){
         this.name = name;
-        this.score = score;
     }
 
     public String getName(){
         return this.name;
     }
 
-    public int getScore(){
-        return this.score;
-    }
-
     @Override
     public boolean equals(Object obj){
-        if (obj instanceof  Restaurant restaurant){
-            if (this.name.equals(restaurant.name) && this.score == restaurant.score){
+        if (obj instanceof Month month){
+            if (this.name.equals(month.name)){
                 return true;
             } else {
-                return false;
+               return false;
             }
         } else {
             return false;
