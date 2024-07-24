@@ -1,11 +1,7 @@
-package Module3.L1Exercise3;
+package Module3.L1exercise3;
 
 import java.io.*;
-import java.nio.file.DirectoryStream;
 import java.util.*;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.nio.file.Files;
 
 public class Main {
     static Scanner scanner = new Scanner(System.in);
