@@ -1,4 +1,4 @@
-package Module3.L1exercise1;
+package Java_Collections.L1exercise1;
 
 import java.util.Objects;
 

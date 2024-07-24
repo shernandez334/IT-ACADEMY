@@ -1,4 +1,4 @@
-package Module3.L1exercise3;
+package Java_Collections.L1exercise3;
 
 import java.io.*;
 import java.util.*;
