@@ -1,4 +1,4 @@
-package Module2.L2Exercise1;
+package Module2_Exceptions.L2Exercise1;
 
 public class Main {
     public static void main(String[] args) {

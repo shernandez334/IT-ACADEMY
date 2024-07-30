@@ -1,8 +1,7 @@
 package L1exercise2;
 import Module4_Testing.L1exercise2.CalculateDni;
 import org.junit.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.Assert.*;
 
 public class dniTest {
     @Test

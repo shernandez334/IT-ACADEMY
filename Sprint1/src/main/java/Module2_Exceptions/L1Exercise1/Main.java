@@ -1,6 +1,4 @@
-package Module2.L1Exercise1;
-
-import java.util.ArrayList;
+package Module2_Exceptions.L1Exercise1;
 
 public class Main {
     public static void main(String[] args) {

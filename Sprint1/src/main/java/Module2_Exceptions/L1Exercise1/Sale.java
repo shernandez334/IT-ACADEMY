@@ -1,4 +1,4 @@
-package Module2.L1Exercise1;
+package Module2_Exceptions.L1Exercise1;
 
 import java.util.ArrayList;
 
