@@ -1,4 +1,4 @@
-package L2exercise6;
+package Module4.L2exercise6;
 
 import Module4_Testing.L2exercise6.Product;
 import org.assertj.core.api.Assertions;

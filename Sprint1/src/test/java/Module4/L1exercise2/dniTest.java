@@ -1,4 +1,4 @@
-package L1exercise2;
+package Module4.L1exercise2;
 import Module4_Testing.L1exercise2.CalculateDni;
 import org.junit.Test;
 import static org.junit.Assert.*;
