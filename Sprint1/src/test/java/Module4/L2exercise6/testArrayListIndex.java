@@ -13,11 +13,6 @@ public class testArrayListIndex {
         String ArrayListIndex;
         List<Product> products = new ArrayList<>();
         products.add(new Product("Coca Cola"));
-        try {
-            ArrayListIndex = products.get(1).getName();
-        } catch (IndexOutOfBoundsException err){
-            ArrayListIndex = err.getMessage();
-        }
-        Assertions.assertThat(products.get(0).ArrayIndexOutOfBounds()).isEqualTo(ArrayListIndex);
+        Assertions.assertThat(products.get(0).ArrayIndexOutOfBounds()).isEqualTo("Index 1 out of bounds for length 1");
     }
 }
