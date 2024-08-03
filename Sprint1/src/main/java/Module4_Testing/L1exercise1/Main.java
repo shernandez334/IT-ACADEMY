@@ -10,7 +10,5 @@ public class Main {
 
         libraries.get(0).addBookTitle("To Kill a Mockingbird");
         libraries.get(0).addBookTitle("La Colmena");
-
-
     }
 }
