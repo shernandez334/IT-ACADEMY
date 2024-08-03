@@ -1,4 +1,4 @@
-package Module6_GenericMethods.L2exercsie1;
+package Module6_GenericMethods.L2exercise1;
 
 public class GenericMethods{
     public static <T> void printGenericParameters(Person arg1, T arg2, T arg3){

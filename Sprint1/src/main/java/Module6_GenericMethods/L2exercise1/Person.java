@@ -1,4 +1,4 @@
-package Module6_GenericMethods.L2exercsie1;
+package Module6_GenericMethods.L2exercise1;
 
 public class Person <T>{
     private String name;

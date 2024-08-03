@@ -1,4 +1,7 @@
-package Module6_GenericMethods.L1exercise2;
+package Module6_GenericMethods.L2exercise2;
+
+import Module6_GenericMethods.L1exercise2.GenericMethods;
+import Module6_GenericMethods.L1exercise2.Person;
 
 public class Main {
     public static void main(String[] args) {
