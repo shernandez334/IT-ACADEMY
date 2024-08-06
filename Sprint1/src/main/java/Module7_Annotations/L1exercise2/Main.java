@@ -1,4 +1,4 @@
-package Module7_Annotations;
+package Module7_Annotations.L1exercise2;
 
 public class Main {
     public static void main(String[] args) {

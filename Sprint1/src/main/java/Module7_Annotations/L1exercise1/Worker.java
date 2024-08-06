@@ -1,4 +1,4 @@
-package Module7_Annotations;
+package Module7_Annotations.L1exercise1;
 
 public class Worker {
     private String firstName;
