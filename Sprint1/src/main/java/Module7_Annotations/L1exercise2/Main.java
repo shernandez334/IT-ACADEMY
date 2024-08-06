@@ -7,5 +7,6 @@ public class Main {
 
         WorkerOnline worker2 = new WorkerOnline("Ivan", "Hernandez", 33, 30);
         System.out.println(worker2.calculateSalary(50));
+
     }
 }
