@@ -33,12 +33,13 @@ public class User {
             jsonStr = obj.writeValueAsString(user1);
             fileStream.write(jsonStr.getBytes());
             fileStream.close();
+            getAnnotation();
         } catch (IOException err){
             System.out.println(err.getMessage());
         }
     }
 
-    public void getAnnotation(){
+    public static void getAnnotation(){
         User obj = new User();
          try {
              Method method = User.class.getMethod("customizedSerialization");
