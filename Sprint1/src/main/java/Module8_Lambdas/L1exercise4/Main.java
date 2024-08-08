@@ -1,4 +1,4 @@
-package Module8_Lambdas.L1exercise3;
+package Module8_Lambdas.L1exercise4;
 
 import java.text.DateFormatSymbols;
 import java.util.ArrayList;
@@ -9,6 +9,6 @@ public class Main {
     public static void main(String[] arg){
         String[] months = new DateFormatSymbols().getMonths();
         List<String> monthsList = new ArrayList<>(Arrays.asList(months));
-        monthsList.forEach(month ->System.out.println(month));
+        monthsList.forEach(System.out::println);
     }
 }
