@@ -14,6 +14,12 @@ public class Student {
     public String getName(){
         return this.name;
     }
+    public int getAge(){
+        return this.age;
+    }
+    public String getCourse(){
+        return this.course;
+    }
     public int getGrade(){
         return this.grade;
     }
