@@ -1,4 +1,4 @@
-package Module5_JavaUtils.L1exercise4;
+package Module5_JavaUtils.L1exercise5;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -38,6 +38,30 @@ public class Directory {
                 System.out.println(line);
             }
         } catch (IOException err){
+            System.out.println(err.getMessage());
+        }
+    }
+
+    public static void serialization(String fileName){
+        Person person1 = new Person("Santiago", 25);
+        try (FileOutputStream file = new FileOutputStream(fileName);
+             ObjectOutputStream out = new ObjectOutputStream(file)){
+
+            out.writeObject(person1);
+        }catch (IOException err){
+            System.out.println(err.getMessage());
+        }
+    }
+
+    public static void deserialization(String fileName){
+
+        try (FileInputStream file = new FileInputStream(fileName);
+             ObjectInputStream out = new ObjectInputStream(file)){
+
+            Person person1 = (Person)out.readObject();
+            System.out.println(person1.getName());
+            System.out.println(person1.getAge());
+        }catch (IOException | ClassNotFoundException err){
             System.out.println(err.getMessage());
         }
     }
