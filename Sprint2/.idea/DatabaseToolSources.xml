@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DatabaseToolSources">
-    <data-source name="glasses_store" uuid="9f26d543-3de4-4df5-9d54-fa8f68a3de04" type="MYSQL">
+    <data-source name="localhost" uuid="f2ede4d5-cf8f-4b42-b751-d8b4a6129140" type="MYSQL">
       <base-info connect-type="DB_DEFAULT" product="MySQL" version="9.0.1" major-version="9" minor-version="0" jdbc-name="MySQL Connector/J" jdbc-version="mysql-connector-j-8.2.0 (Revision: 06a1f724497fd81c6a659131fda822c9e5085b6c)" jdbc-major-version="8" jdbc-minor-version="2" />
       <user-name>root</user-name>
       <schema-mapping>
         <introspection-scope>
           <node kind="schema">
-            <name qname="cul_d_ampolla" operator="@" />
+            <name qname="glasses_store" operator="@" />
             <name qname="my_database" operator="@" />
             <name qname="mysql" operator="@" />
             <name qname="performance_schema" operator="@" />
@@ -18,12 +18,11 @@
       <choose-schema-mapping>
         <introspection-scope>
           <node kind="schema">
-            <name qname="Cul_d_Ampolla" operator="@" />
-            <name qname="cul_d_ampolla" operator="@" />
+            <name qname="glasses_store" operator="@" />
           </node>
         </introspection-scope>
       </choose-schema-mapping>
-      <url>jdbc:mysql://localhost:3306/cul_d_ampolla</url>
+      <url>jdbc:mysql://localhost:3306/glasses_store</url>
       <remarks />
       <vm-options />
       <driver-info id="mysql8" />

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f9eac48-5f38-46d1-b915-c15d8de68b94" name="Changes" comment="" />
+    <list default="true" id="0f9eac48-5f38-46d1-b915-c15d8de68b94" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/IT-ACADEMY.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L1exercise1/glasses_store.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DatabaseToolDbSqlDialect.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DatabaseToolDbSqlDialect.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DatabaseToolSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DatabaseToolSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SqlFileSource.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SqlFileSource.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L1exercise1/glasses_store.png" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +23,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2kh0NdqXVgmtaM8uNATlUgp9HTN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -25,12 +38,53 @@
   "keyToString": {
     "/Users/santiagohernandez/Library/Application Support/JetBrains/IdeaIC2024.1/consoles/database-tool/9f26d543-3de4-4df5-9d54-fa8f68a3de04/console.sql": "cul_d_ampolla",
     "/Users/santiagohernandez/Library/Application Support/JetBrains/IdeaIC2024.1/consoles/database-tool/e23e6f84-ac3f-4c6d-9d86-4af0ed9b8287/console.sql": "Cul_d_Ampolla",
+    "Database Script.glasses_store.sql.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "promo.database"
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "promo.database",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ],
+    "RunConfigurationTargetLRU": [
+      "169db461-50c3-48b0-a12b-32de72d3dbb2",
+      "169db461-50c3-48b0-a12b-32de72d3dbb2/schema/\"cul_d_ampolla\""
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
+      "MySQL"
+    ]
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="glasses_store.sql" type="DatabaseScript" editBeforeRun="true" temporary="true">
+      <script-file value="$PROJECT_DIR$/L1exercise1/glasses_store.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="169db461-50c3-48b0-a12b-32de72d3dbb2" namespace="schema/&quot;cul_d_ampolla&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Database Script.glasses_store.sql" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,7 +93,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1723720472501</updated>
+      <workItem from="1723803306540" duration="8228000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
