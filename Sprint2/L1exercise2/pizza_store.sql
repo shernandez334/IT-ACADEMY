@@ -71,8 +71,10 @@ CREATE TABLE `order`(
     total_price int not null,
     store_id int,
     client_id int,
+    employee_id int,
     foreign key (store_id) references store(store_id),
-    foreign key (client_id) references client(client_id)
+    foreign key (client_id) references client(client_id),
+    foreign key (employee_id) references employee(employee_id)
 );
 
 CREATE TABLE product(
