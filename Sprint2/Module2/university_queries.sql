@@ -51,7 +51,7 @@ SELECT DISTINCT p.apellido2, p.apellido1, p.nombre
         join persona p on a.id_alumno = p.id
 where c.anyo_inicio = 2018;
 
--- 2.1
+-- 2.1 LEFT JOIN & RIGHT JOIN
 SELECT DISTINCT d.nombre as 'departamento', p.apellido1, p.apellido2, p.nombre
 from profesor pr
          join departamento d on pr.id_departamento = d.id
@@ -91,3 +91,70 @@ from departamento d
          left join profesor pr on d.id = pr.id_departamento
          left join asignatura a on pr.id_profesor = a.id_profesor
 where a.curso IS NULL;
+
+-- 3.1 Resume
+select count(*)
+from persona p
+where p.tipo = 'alumno';
+
+-- 3.2
+select count(*)
+from persona p
+where p.tipo = 'alumno' AND year(p.fecha_nacimiento) = 1999;
+
+-- 3.3
+select d.nombre, count(pr.id_profesor) as "num_professors"
+from departamento d
+    join profesor pr on d.id = pr.id_departamento
+group by d.nombre
+order by d.nombre desc;
+
+-- 3.4
+select d.nombre, count(pr.id_profesor) as "num_professors"
+from departamento d
+         left join profesor pr on d.id = pr.id_departamento
+group by d.nombre;
+
+-- 3.5
+select g.nombre, count(a.id_grado)
+from grado g
+         left join asignatura a on g.id = a.id_grado
+group by g.nombre;
+
+-- 3.6
+select g.nombre, count(a.id_grado) > 40
+from grado g
+         left join asignatura a on g.id = a.id_grado
+group by g.nombre;
+
+-- 3.7
+select g.nombre, a.tipo, count(a.creditos)
+from grado g
+         join asignatura a on g.id = a.id_grado
+group by g.nombre, a.tipo;
+
+-- 3.8
+select c.anyo_inicio, count(matr.id_alumno)
+from alumno_se_matricula_asignatura matr
+         join curso_escolar c on matr.id_curso_escolar = c.id
+group by c.anyo_inicio;
+
+-- 3.9
+select p.id, p.nombre, p.apellido1, apellido2, count(a.id_profesor) as 'num_asignaturas'
+from persona p
+         left join asignatura a on p.id = a.id_profesor
+where p.tipo = 'profesor'
+group by p.id, p.nombre, p.apellido1, apellido2
+order by count(a.id_profesor) desc;
+
+-- 3.10
+select *
+from persona
+where fecha_nacimiento = (select max(fecha_nacimiento) from persona);
+
+-- 3.11
+select distinct *
+from persona p
+         join profesor pr on p.id = pr.id_profesor
+         join departamento d on pr.id_departamento = d.id
+         left join asignatura a on pr.id_profesor = a.id_profesor;

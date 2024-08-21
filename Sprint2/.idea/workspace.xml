@@ -5,13 +5,169 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f9eac48-5f38-46d1-b915-c15d8de68b94" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e12964ca-54ec-4078-b3bb-60568ddb941e.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e12964ca-54ec-4078-b3bb-60568ddb941e.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Module2/university_queries.sql" beforeDir="false" afterPath="$PROJECT_DIR$/Module2/university_queries.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/IT-ACADEMY.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/assertj_core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/User.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/countries.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/decryptedFiles.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/encryptedFiles.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/ranking.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module1/L1exercise1/Instrument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module1/L1exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module1/L1exercise1/PercussionInstrument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module1/L1exercise1/StringInstrument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module1/L1exercise1/WindInstrument.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module1/L1exercise2/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module1/L1exercise2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module1/L2exercise1/Camera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module1/L2exercise1/Clock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module1/L2exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module1/L2exercise1/Smartphone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module1/L2exercise1/Telephone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module2_Exceptions/L1Exercise1/EmptySaleException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module2_Exceptions/L1Exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module2_Exceptions/L1Exercise1/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module2_Exceptions/L1Exercise1/Sale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module2_Exceptions/L1exercise2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module2_Exceptions/L2Exercise1/Entry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module2_Exceptions/L2Exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module3_Java_Collections/L1exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module3_Java_Collections/L1exercise1/Month.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module3_Java_Collections/L1exercise2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module3_Java_Collections/L1exercise3/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module3_Java_Collections/L2exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module3_Java_Collections/L2exercise1/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module3_Java_Collections/L2exercise2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module3_Java_Collections/L2exercise2/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module4_Testing/L1exercise1/Library.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module4_Testing/L1exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module4_Testing/L1exercise2/CalculateDni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module4_Testing/L1exercise3/ArrayListExceptions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module4_Testing/L2exercise2/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module4_Testing/L2exercise4/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module4_Testing/L2exercise6/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L1exercise1/Directory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L1exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L1exercise2/Directory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L1exercise2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L1exercise3/Directory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L1exercise3/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L1exercise4/Directory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L1exercise4/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L1exercise5/Directory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L1exercise5/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L1exercise5/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L2exercise1/Directory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L2exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L3exercise1/Directory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L3exercise1/EncryptionAES.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module5_JavaUtils/L3exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L1exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L1exercise1/NoGenericMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L1exercise2/GenericMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L1exercise2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L1exercise2/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L2exercise1/GenericMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L2exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L2exercise1/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L2exercise2/GenericMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L2exercise2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L2exercise2/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L3exercise1/Generic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L3exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L3exercise1/Smartphone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module6_GenericMethods/L3exercise1/Telephone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L1exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L1exercise1/Worker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L1exercise1/WorkerInPerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L1exercise1/WorkerOnline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L1exercise2/DeprecatedMethods.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L1exercise2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L1exercise2/Worker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L1exercise2/WorkerInPerson.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L1exercise2/WorkerOnline.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L2exercise1/CustomizedAnnotations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L2exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L2exercise1/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L3exercise1/CustomizedAnnotations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L3exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module7_Annotations/L3exercise1/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L1exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L1exercise2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L1exercise3/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L1exercise4/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L1exercise5/GetValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L1exercise5/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L1exercise6/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L1exercise7/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L1exercise8/Functional.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L1exercise8/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L2exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L2exercise2/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L2exercise3/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L2exercise3/MathOperations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L2exercise4/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L3exercise1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/main/java/Module8_Lambdas/L3exercise1/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/test/java/Module4/L1exercise1/ListTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/test/java/Module4/L1exercise2/dniTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/test/java/Module4/L1exercise3/TestArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/test/java/Module4/L2exercise1/TestIntegers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/test/java/Module4/L2exercise2/TestObjects.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/test/java/Module4/L2exercise3/testListsOfIntegers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/test/java/Module4/L2exercise4/TestArrayListOrder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/test/java/Module4/L2exercise5/testMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/test/java/Module4/L2exercise6/testArrayListIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/src/test/java/Module4/L2exercise7/TestObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/utilSerial.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprint1/utils.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DatabaseToolDbSqlDialect.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/DatabaseToolSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/SqlFileSource.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/15672447-19d6-4116-ae72-da0d4efc1558.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/15672447-19d6-4116-ae72-da0d4efc1558/storage_v2/_src_/schema/uab.VsMBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/169db461-50c3-48b0-a12b-32de72d3dbb2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/169db461-50c3-48b0-a12b-32de72d3dbb2/storage_v2/_src_/schema/cul_d_ampolla.No9-ew.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/43efc2a0-acab-45ef-8c77-82f707928048.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/43efc2a0-acab-45ef-8c77-82f707928048/storage_v2/_src_/schema/uab.VsMBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e12964ca-54ec-4078-b3bb-60568ddb941e 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e12964ca-54ec-4078-b3bb-60568ddb941e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e12964ca-54ec-4078-b3bb-60568ddb941e/storage_v2/_src_/schema/telepizza.HlOvLg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e70be5ef-babb-4b68-9d37-18a0349af48e 2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e70be5ef-babb-4b68-9d37-18a0349af48e.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e70be5ef-babb-4b68-9d37-18a0349af48e/storage_v2/_src_/schema/universidad.nijUXQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/L1exercise1/glasses_store.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/L1exercise1/glasses_store.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/L1exercise2/pizza_store.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module1/L1exercise2/pizza_store.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/schema_universidad.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Module2/university_queries.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint2.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +275,7 @@
       <workItem from="1724078436272" duration="613000" />
       <workItem from="1724079736727" duration="635000" />
       <workItem from="1724080442613" duration="8566000" />
-      <workItem from="1724144730013" duration="26702000" />
+      <workItem from="1724144730013" duration="37017000" />
     </task>
     <servers />
   </component>
