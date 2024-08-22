@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f9eac48-5f38-46d1-b915-c15d8de68b94" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Module2/store_queries.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/IT-ACADEMY.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
@@ -193,6 +194,7 @@
     "/Users/santiagohernandez/Library/Application Support/JetBrains/IdeaIC2024.1/consoles/database-tool/9f26d543-3de4-4df5-9d54-fa8f68a3de04/console.sql": "cul_d_ampolla",
     "/Users/santiagohernandez/Library/Application Support/JetBrains/IdeaIC2024.1/consoles/database-tool/e23e6f84-ac3f-4c6d-9d86-4af0ed9b8287/console.sql": "Cul_d_Ampolla",
     "Database Script.glasses_store.sql.executor": "Run",
+    "Database Script.schema_tienda.sql.executor": "Run",
     "Database Script.schema_universidad.sql.executor": "Run",
     "Database Script.university_queries.sql.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -212,11 +214,11 @@
       "mysql"
     ],
     "RunConfigurationTargetLRU": [
-      "169db461-50c3-48b0-a12b-32de72d3dbb2/schema/\"cul_d_ampolla\"",
       "e12964ca-54ec-4078-b3bb-60568ddb941e",
       "43efc2a0-acab-45ef-8c77-82f707928048",
       "e70be5ef-babb-4b68-9d37-18a0349af48e",
-      "15672447-19d6-4116-ae72-da0d4efc1558"
+      "15672447-19d6-4116-ae72-da0d4efc1558",
+      "08c8a33f-c65a-4355-9ab7-13bc60d92da1"
     ],
     "com.intellij.ide.scratch.LRUPopupBuilder$1/": [
       "MySQL"
@@ -228,11 +230,17 @@
       <recent name="$PROJECT_DIR$/Module1" />
     </key>
   </component>
-  <component name="RunManager" selected="Database Script.university_queries.sql">
+  <component name="RunManager">
     <configuration name="glasses_store.sql" type="DatabaseScript" editBeforeRun="true" temporary="true">
       <script-file value="$PROJECT_DIR$/Module2/schema_universidad.sql" />
       <script-mode>FILE</script-mode>
       <data-source id="e12964ca-54ec-4078-b3bb-60568ddb941e" />
+      <method v="2" />
+    </configuration>
+    <configuration name="schema_tienda.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/Module2/schema_tienda.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="08c8a33f-c65a-4355-9ab7-13bc60d92da1" />
       <method v="2" />
     </configuration>
     <configuration name="schema_universidad.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
@@ -275,7 +283,7 @@
       <workItem from="1724078436272" duration="613000" />
       <workItem from="1724079736727" duration="635000" />
       <workItem from="1724080442613" duration="8566000" />
-      <workItem from="1724144730013" duration="37017000" />
+      <workItem from="1724144730013" duration="56646000" />
     </task>
     <servers />
   </component>
