@@ -1,4 +1,4 @@
-package Module1_Patterns;
+package Module1_Patterns.L1Exercise1;
 
 import java.util.*;
 
