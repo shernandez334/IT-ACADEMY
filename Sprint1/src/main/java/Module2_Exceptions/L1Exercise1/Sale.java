@@ -18,10 +18,9 @@ public class Sale {
     public void calculateTotal() throws EmptySaleException {
         if (this.products.isEmpty()){
             throw new EmptySaleException("To make a sale, first add a product.");
-        } else {
-            for (Product product1 : this.products){
-                totalSale += product1.getPrice();
-            }
+        }
+        for (Product product1 : this.products){
+            totalSale += product1.getPrice();
         }
     }
 

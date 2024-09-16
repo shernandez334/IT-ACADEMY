@@ -7,8 +7,8 @@ public class Main {
 
         try{
             sale1.calculateTotal();
-        } catch(Exception err){
-            System.out.println(err.getMessage());
+        } catch(EmptySaleException e){
+            System.out.println(e.getMessage());
         }
 
         Product product1 = new Product("Banana", 4.50);
