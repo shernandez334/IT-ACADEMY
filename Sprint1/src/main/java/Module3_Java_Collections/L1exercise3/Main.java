@@ -5,37 +5,40 @@ import java.util.*;
 
 public class Main {
     static Scanner scanner = new Scanner(System.in);
+    static final String countriesFile = "countries.txt";
+    static final String rankingFile = "ranking.txt";
+    static final int numQuestions = 10;
 
     public static void main(String[] args) {
-        String score = "";
         String user = "";
+        String score = "";
         HashMap<String, String> capitalCities = new HashMap<String, String>();
 
-        fileToMap("countries.txt", capitalCities);
+        fileToMap(capitalCities);
         System.out.println("Nombre del Usuario: ");
         user = scanner.next();
         score = String.valueOf((capitalGuesser(capitalCities)));
         createWriteFile(user, score);
     }
 
-    static public void fileToMap(String file, HashMap<String, String> capitalCities){
+    private static void fileToMap(HashMap<String, String> capitalCities){
         try {
-            BufferedReader countriesReader = new BufferedReader(new FileReader(file));
-            String line;
+            BufferedReader countriesReader = new BufferedReader(new FileReader(countriesFile));
+            String line = "";
             while((line = countriesReader.readLine()) != null){
                 String[] splitLine = line.split(" ");
                 capitalCities.put(splitLine[0], splitLine[1]);
             }
             countriesReader.close();
         } catch (IOException err){
-            err.printStackTrace();
+            System.out.println(err.getMessage());
         }
     }
 
-    static public int capitalGuesser(HashMap<String, String>capitalCities){
+    private static int capitalGuesser(HashMap<String, String>capitalCities){
         int score = 0;
-        String shuffleCountry;
-        for (int i = 0; i < 10; i++){
+        String shuffleCountry = "";
+        for (int i = 0; i < numQuestions; i++){
             String capit = "";
             List<String> countries = new ArrayList<String>(capitalCities.keySet());
             shuffleCountry = countries.get(0);
@@ -58,11 +61,11 @@ public class Main {
 
     public static void createWriteFile(String user, String score){
         try{
-            FileWriter fileCountries = new FileWriter("ranking.txt");
+            FileWriter fileCountries = new FileWriter(rankingFile);
             fileCountries.write(user + "\n" + score);
             fileCountries.close();
         } catch (IOException err){
-            err.printStackTrace();
+            System.out.println(err.getMessage());
         }
     }
 }
