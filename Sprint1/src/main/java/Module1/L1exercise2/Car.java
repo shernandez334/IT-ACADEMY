@@ -5,8 +5,8 @@ public class Car {
     private static String model;
     private final double horsePower = 500;
 
-    public Car(String model){
-        this.model = model;
+    public Car(){
+        model = "Testarossa";
     }
 
     public static String brake(){
