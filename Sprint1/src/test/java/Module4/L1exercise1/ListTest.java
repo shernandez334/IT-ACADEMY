@@ -1,5 +1,6 @@
 package Module4.L1exercise1;
 import Module4_Testing.L1exercise1.Library;
+import org.junit.Before;
 import org.junit.Test;
 import java.util.*;
 import static org.junit.Assert.*;
@@ -7,107 +8,57 @@ import java.util.List;
 
 public class ListTest {
 
+    Library lib;
+    @Before
+    public void setUp(){
+        lib = new Library();
+        lib.addBookTitle("Tom Sawyer");
+        lib.addBookTitle("1984");
+        lib.addBookTitle("To Kill a Mockingbird");
+    }
+
     @Test
     public void testNullList(){
-        ArrayList<Library> libraries= new ArrayList<>();
-        Library library = new Library();
-        libraries.add(library);
-        libraries.get(0).addBookTitle("Tom Sayer");
-        assertNotNull(libraries.get(0).getBookList());
+        assertNotNull("The list is  ot null.", lib.getBookList());
     }
 
     @Test
     public void testCheckListSize(){
-        ArrayList<Library> libraries= new ArrayList<>();
-        Library library = new Library();
-        libraries.add(library);
-        libraries.get(0).addBookTitle("Tom Sayer");
-        libraries.get(0).addBookTitle("Tom Sayer");
-        libraries.get(0).addBookTitle("Tom Sayer");
-        assertEquals(3, libraries.get(0).getBookList().size());
+        assertEquals(3, lib.getBookListSize());
     }
 
     @Test
     public void testFindBookByName(){
-        int positBookFound;
-        ArrayList<Library> libraries= new ArrayList<>();
-        Library library = new Library();
-        libraries.add(library);
-        libraries.get(0).addBookTitle("Tom Sayer");
-        libraries.get(0).addBookTitle("1984");
-        libraries.get(0).addBookTitle("To Kill a Mockingbird");
-        positBookFound = libraries.get(0).findBookByName("To Kill a Mockingbird");
-        assertEquals(2, positBookFound);
+        assertEquals(2, lib.findBookByName("To Kill a Mockingbird"));
     }
 
     @Test
     public void testDuplicateBookTitle(){
-        boolean duplicateBook = false;
-        ArrayList<Library> libraries= new ArrayList<>();
-        Library library = new Library();
-        libraries.add(library);
-        libraries.get(0).addBookTitle("Tom Sayer");
-        libraries.get(0).addBookTitle("1984");
-        libraries.get(0).addBookTitle("To Kill a Mockingbird");
-        List<String> bookList = new ArrayList<>(libraries.get(0).getBookList());
-        Set<String> setBookList = new HashSet<>(bookList);
-        if (setBookList.size() < bookList.size()){
-            duplicateBook = true;
-        }
-        assertFalse(duplicateBook);
+        Set<String> uniqueBooks = new HashSet<>(lib.getBookList());
+        assertEquals(uniqueBooks.size(), lib.getBookListSize());
     }
 
     @Test
     public  void testFindBookByPos(){
-        String bookByPosit;
-        ArrayList<Library> libraries= new ArrayList<>();
-        Library library = new Library();
-        libraries.add(library);
-        libraries.get(0).addBookTitle("Tom Sayer");
-        libraries.get(0).addBookTitle("1984");
-        libraries.get(0).addBookTitle("To Kill a Mockingbird");
-        bookByPosit = libraries.get(0).findBookByPosition(2);
-        assertEquals("To Kill a Mockingbird", bookByPosit);
+        assertEquals("To Kill a Mockingbird", lib.findBookByPosition(2));
     }
 
     @Test
     public void testAddBooksToTheList(){
-        int idBookTFound;
-        ArrayList<Library> libraries= new ArrayList<>();
-        Library library = new Library();
-        libraries.add(library);
-        libraries.get(0).addBookTitle("Tom Sayer");
-        List<String> bookList = new ArrayList<>(libraries.get(0).getBookList());
-        idBookTFound = libraries.get(0).findBookByName(bookList.get(0));
-        assertTrue(bookList.size() == 1 && idBookTFound == 0);
+        lib.addBookTitle("Moby Dick");
+        assertEquals(4, lib.getBookListSize());
     }
 
     @Test
     public void removeBooksToTheList(){
-        ArrayList<Library> libraries= new ArrayList<>();
-        Library library = new Library();
-        libraries.add(library);
-        libraries.get(0).addBookTitle("Tom Sayer");
-        libraries.get(0).addBookTitle("1984");
-        libraries.get(0).addBookTitle("To Kill a Mockingbird");
-        libraries.get(0).removeBook("1984");
-        List<String> bookList = new ArrayList<>(libraries.get(0).getBookList());
-        assertEquals(bookList.size(), 2);
+        lib.removeBook("Moby Dick");
+        assertEquals(lib.getBookListSize(), 3);
     }
 
     @Test
     public void testSortedlist(){
-        boolean isSorted = true;
-        ArrayList<Library> libraries= new ArrayList<>();
-        Library library = new Library();
-        libraries.add(library);
-        libraries.get(0).addBookTitle("To Kill a Mockingbird");
-        libraries.get(0).addBookTitle("Tom Sayer");
-        libraries.get(0).addBookTitle("1984");
-        libraries.get(0).removeBook("1984");
-        List<String> bookList = new ArrayList<>(libraries.get(0).getBookList());
-        List<String> sortedBookList = new ArrayList<>(bookList);
-        Collections.sort(sortedBookList);
-        assertTrue(bookList.equals(sortedBookList));
+        List<String> sortedBookList = lib.getBookList().stream()
+                .sorted().toList();
+        assertEquals(sortedBookList, lib.getBookList());
     }
 }
