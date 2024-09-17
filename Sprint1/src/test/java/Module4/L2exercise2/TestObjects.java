@@ -7,15 +7,15 @@ import org.junit.Test;
 public class TestObjects {
     @Test
     public void testEqualObjects(){
-        Person person1 = new Person("David", 43);
+        Person person1 = new Person("David", 34);
         Person person2 = new Person("David", 43);
-        Assertions.assertThat(person1).isEqualTo(person1);
+        Assertions.assertThat(person1).isSameAs(person1);
     }
 
     @Test
     public void testNotEqualObjects(){
         Person person1 = new Person("David", 43);
-        Person person2 = new Person("Tony", 50);
-        Assertions.assertThat(person1).isNotEqualTo(person2);
+        Person person2 = new Person("Tony", 90);
+        Assertions.assertThat(person1).isNotSameAs(person2);
     }
 }
