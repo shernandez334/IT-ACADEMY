@@ -1,21 +1,11 @@
 package Module4_Testing.L1exercise3;
-import java.util.ArrayList;
+
+import java.util.List;
 
 public class ArrayListExceptions {
-    private ArrayList<String> outOfBounds;
-
-    public ArrayListExceptions(){
-        this.outOfBounds = new ArrayList<>();
-    }
-
-    public String listOutOfBounds(){
-        String str;
-        try {
-            str = this.outOfBounds.get(0);
+    public static void listOutOfBounds(List<String> outOfBoundsList, int pos){
+        if (pos >= outOfBoundsList.size() - 1) {
+            throw new ArrayIndexOutOfBoundsException("Exception caught.");
         }
-        catch (IndexOutOfBoundsException err){
-            str = err.getMessage();
-        }
-        return str;
     }
 }
