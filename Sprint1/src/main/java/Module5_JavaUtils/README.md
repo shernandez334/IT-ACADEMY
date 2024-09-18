@@ -21,7 +21,7 @@ Then, run the file where your main is:
 java Main.
 ```
 
-LEVEL 1
+## LEVEL 1
 Exercise 1-2-3-4
 ```bash
 javac Main.java Directory.java
@@ -34,14 +34,14 @@ javac Main.java Directory.java
 java Main
 ```
 
-LEVEL 2
+## LEVEL 2
 Exercise 1
 ```bash
 javac Main.java Directory.java
 java Main
 ```
 
-LEVEL 3
+## LEVEL 3
 Exercise 1
 ```bash
 javac Main.java Directory.java EncryptionAES.java
