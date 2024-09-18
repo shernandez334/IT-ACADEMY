@@ -7,7 +7,7 @@ public class Main {
 
         try{
             sale1.calculateTotal();
-        } catch(EmptySaleException e){
+        } catch(Exception e){
             System.out.println(e.getMessage());
         }
 
@@ -18,7 +18,7 @@ public class Main {
 
         try {
             sale1.causeIndexError();
-        } catch (Exception err){
+        } catch (IndexOutOfBoundsException err){
             System.out.println(err.getMessage());
         }
     }
