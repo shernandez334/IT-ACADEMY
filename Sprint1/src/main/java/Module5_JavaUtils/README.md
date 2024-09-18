@@ -1,7 +1,10 @@
-To execute a Java file from the command interface,
-you must first compile all .java files, using the following command:
+# How to Compile and Execute a Java File
 
-javac name_of_the_file1.java, name_of_the_file2.java
+To execute a Java file from the command line, you must first compile all `.java` files, using the following command:
+
+```bash
+javac name_of_the_file1.java name_of_the_file2.java
+```
 
 And so on with all files required to run your main.
 
