@@ -1,11 +1,10 @@
 package Module7_Annotations.L1exercise2;
 
 public class WorkerOnline extends Worker {
-    private double priceOfInternet;
+    private final int priceOfInternet = 25;
 
-    public WorkerOnline(String firstName, String surname, double pricePerHour, double priceOfInternet){
+    public WorkerOnline(String firstName, String surname, double pricePerHour){
         super(firstName, surname, pricePerHour);
-        this.priceOfInternet = priceOfInternet;
     }
 
     @Override

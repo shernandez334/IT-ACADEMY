@@ -45,8 +45,12 @@ public class User {
              Method method = User.class.getMethod("customizedSerialization");
              CustomizedAnnotations annotation = method.getAnnotation(CustomizedAnnotations.class);
              System.out.println(annotation);
-         } catch (Exception err){
-             System.out.println(err.getMessage());
+         } catch (NoSuchMethodException e){
+             System.out.println("The method has not been found");
+         } catch (SecurityException e){
+             System.out.println("A security error has occurred: " + e.getMessage());
+         } catch (Exception e){
+             System.out.println("An unexpected error occurred: " + e.getMessage());
          }
     }
 }

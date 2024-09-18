@@ -3,10 +3,7 @@ package Module7_Annotations.L2exercise1;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.Serializable;
+import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -34,8 +31,12 @@ public class User implements Serializable {
             jsonStr = obj.writeValueAsString(user1);
             fileStream.write(jsonStr.getBytes());
             fileStream.close();
-        } catch (IOException err){
-            System.out.println(err.getMessage());
+        } catch (FileNotFoundException e){
+            System.out.println("Error: File not Found.");
+        } catch (SecurityException e){
+            System.out.println("A security error has occurred: " + e.getMessage());
+        } catch (Exception e){
+            System.out.println("An unexpected error occurred: " + e.getMessage());
         }
     }
 }

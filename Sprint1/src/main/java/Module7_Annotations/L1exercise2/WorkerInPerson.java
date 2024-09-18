@@ -1,17 +1,16 @@
 package Module7_Annotations.L1exercise2;
 
 public class WorkerInPerson extends Worker {
-    private static double priceOfGasoline;
+    private final int priceOfGasoline = 200;
 
-    public WorkerInPerson(String firstName, String surname, double pricePerHour, double priceOfGasoline){
+    public WorkerInPerson(String firstName, String surname, double pricePerHour){
         super(firstName, surname, pricePerHour);
-        this.priceOfGasoline = priceOfGasoline;
     }
 
     @Override
     public String calculateSalary(int workingHours) {
         double salary;
-        salary = (workingHours * super.getPricePerHour()) + priceOfGasoline;
+        salary = (workingHours * super.getPricePerHour()) + this.priceOfGasoline;
         return "The total salary is: " + salary;
     }
 

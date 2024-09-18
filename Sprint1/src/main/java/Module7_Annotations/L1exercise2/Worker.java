@@ -1,9 +1,10 @@
 package Module7_Annotations.L1exercise2;
 
-public class Worker {
+public abstract class Worker {
     private String firstName;
     private String surname;
     private double pricePerHour;
+
     public Worker(String firstName, String surname, double pricePerHour){
         this.firstName = firstName;
         this.surname = surname;
@@ -14,8 +15,6 @@ public class Worker {
         return this.pricePerHour;
     }
 
-    public String calculateSalary(int workingHours){
-        return "";
-    }
+    public abstract String calculateSalary(int workingHours);
 
 }
