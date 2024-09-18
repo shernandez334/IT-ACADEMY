@@ -31,6 +31,7 @@ public class NoGenericMethods {
         this.arg3 = arg3;
     }
 
+    @Override
     public String toString(){
         return "arg1: " + this.arg1 + "\n" +
                 "arg2: " + this.arg2 + "\n" +

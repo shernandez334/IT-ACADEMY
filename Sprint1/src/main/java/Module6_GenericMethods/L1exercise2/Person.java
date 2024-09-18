@@ -10,6 +10,8 @@ public class Person <T>{
         this.surname = surname;
         this.age = age;
     }
+
+    @Override
     public String toString(){
         return "Arg1: " + this.name + "\n"
             + "Arg2: " + this.surname + "\n"
