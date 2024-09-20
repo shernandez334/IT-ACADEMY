@@ -1,28 +1,27 @@
 package Module8_Lambdas.L2exercise2;
 
-import javax.management.StringValueExp;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Main {
     public static void main(String[] arg){
-        int[] numList = {3, 55, 44};
-        System.out.println(filterNumbers(numList));
+        List<Integer> numList = Arrays.asList(3, 55, 44);
+        filterNumbers(numList);
     }
 
-    public static String filterNumbers(int[] numList){
-        String strList = "";
-        for (int number: numList){
-            if (number == numList[numList.length - 1]){
-                if (number % 2 == 0) {
-                    strList += "e" + String.valueOf(number) + ".";
-                } else {
-                    strList += "o" + String.valueOf(number) + ".";
-                }
-            }else if (number % 2 == 0){
-                strList += "e" + String.valueOf(number) + ",";
-            }else{
-                strList += "o" + String.valueOf(number) + ",";
-            }
-        }
-        return strList;
+    public static void filterNumbers(List<Integer> numList){
+        numList.stream()
+                .filter(n -> (n % 2) != 0)
+                .map(String::valueOf)
+                .map(s -> "o" + s)
+                .forEach(System.out::println);
+        numList.stream()
+                .filter(n -> (n % 2) == 0)
+                .map(String::valueOf)
+                .map(s -> "e" + s)
+                .forEach(System.out::println);
     }
 }

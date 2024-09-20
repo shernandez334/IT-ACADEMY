@@ -8,7 +8,10 @@ public class Main {
     public static void main(String[] arg){
         ArrayList<Object> objList = new ArrayList<Object>();
         Collections.addAll(objList, 2, 4, 6, "hello", "how", "areYou");
-        objList.sort(Comparator.comparing(obj -> obj.toString().length()).reversed());
-        objList.forEach(System.out::println);
+        objList.stream()
+                .filter(obj -> obj instanceof String)
+                .map(String::valueOf)
+                .sorted(Comparator.comparingInt(String::length).reversed())
+                .forEach(System.out::println);
     }
 }

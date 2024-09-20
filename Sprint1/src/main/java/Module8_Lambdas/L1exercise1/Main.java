@@ -7,9 +7,9 @@ import java.util.List;
 public class Main {
     public static void main (String[] args){
         List<String> wordsList = new ArrayList<>();
-        Collections.addAll(wordsList, "Hola", "Como", "estas", "hoy");
+        Collections.addAll(wordsList, "Hola", "Ola", "hello", "hoy");
         wordsList.stream()
-                .filter(words -> words.contains("o"))
+                .filter(words -> words.toLowerCase().contains("o"))
                 .forEach(System.out::println);
     }
 }
