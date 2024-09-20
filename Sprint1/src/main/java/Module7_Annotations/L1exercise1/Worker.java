@@ -1,6 +1,6 @@
 package Module7_Annotations.L1exercise1;
 
-public abstract class Worker {
+public class Worker {
     private String firstName;
     private String surname;
     private final double pricePerHour;
