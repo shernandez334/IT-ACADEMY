@@ -2,7 +2,7 @@ package Module4.L2exercise6;
 
 import Module4_Testing.L2exercise6.Product;
 import org.assertj.core.api.Assertions;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;

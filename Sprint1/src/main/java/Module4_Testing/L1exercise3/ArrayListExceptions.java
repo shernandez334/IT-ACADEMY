@@ -4,7 +4,7 @@ import java.util.List;
 
 public class ArrayListExceptions {
     public static void listOutOfBounds(List<String> outOfBoundsList, int pos){
-        if (pos >= outOfBoundsList.size() - 1) {
+        if (pos < 0 || pos >= outOfBoundsList.size()) {
             throw new ArrayIndexOutOfBoundsException("Exception caught.");
         }
     }

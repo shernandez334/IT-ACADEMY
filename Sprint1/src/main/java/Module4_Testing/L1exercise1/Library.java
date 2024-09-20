@@ -1,9 +1,12 @@
 package Module4_Testing.L1exercise1;
 import java.util.ArrayList;
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Library {
     private ArrayList<String> bookList;
+    private static final Logger logger = LoggerFactory.getLogger(Library.class);
+
 
     public Library(){
         this.bookList = new ArrayList<>();
@@ -30,7 +33,8 @@ public class Library {
         try{
             bookFound = this.bookList.get(pos);
         } catch (IndexOutOfBoundsException e){
-            System.out.println(e.getMessage());
+            logger.error("Error: Book position {} (1-based) is out of bounds. List size: {} (0-based). Exception: {}",
+                    pos, bookList.size(), e.getMessage(), e);
         }
         return bookFound;
     }
@@ -39,7 +43,8 @@ public class Library {
         try {
             bookList.add(pos - 1, bookTitle);
         } catch (IndexOutOfBoundsException e){
-            System.out.println(e.getMessage());
+            logger.error("Error: Book position {} (1-based) is out of bounds. List size: {} (0-based). Exception: {}",
+                    pos, bookList.size(), e.getMessage(), e);
         }
     }
 

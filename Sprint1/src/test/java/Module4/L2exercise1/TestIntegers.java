@@ -1,8 +1,7 @@
 package Module4.L2exercise1;
 
+import org.junit.jupiter.api.Test;
 import org.assertj.core.api.Assertions;
-import org.junit.Assert;
-import org.junit.Test;
 
 public class TestIntegers {
     @Test

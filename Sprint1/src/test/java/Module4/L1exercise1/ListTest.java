@@ -1,25 +1,25 @@
 package Module4.L1exercise1;
 import Module4_Testing.L1exercise1.Library;
-import org.junit.Before;
-import org.junit.Test;
 import java.util.*;
-import static org.junit.Assert.*;
 import java.util.List;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ListTest {
 
     Library lib;
-    @Before
+    @BeforeEach
     public void setUp(){
         lib = new Library();
-        lib.addBookTitle("Tom Sawyer");
         lib.addBookTitle("1984");
         lib.addBookTitle("To Kill a Mockingbird");
+        lib.addBookTitle("Tom Sawyer");
     }
 
     @Test
     public void testNullList(){
-        assertNotNull("The list is  ot null.", lib.getBookList());
+        assertFalse(lib.getBookList().isEmpty());
     }
 
     @Test
@@ -29,7 +29,7 @@ public class ListTest {
 
     @Test
     public void testFindBookByName(){
-        assertEquals(2, lib.findBookByName("To Kill a Mockingbird"));
+        assertEquals(1, lib.findBookByName("To Kill a Mockingbird"));
     }
 
     @Test
@@ -39,8 +39,8 @@ public class ListTest {
     }
 
     @Test
-    public  void testFindBookByPos(){
-        assertEquals("To Kill a Mockingbird", lib.findBookByPosition(2));
+    public void testFindBookByPos(){
+        assertEquals("Tom Sawyer", lib.findBookByPosition(2));
     }
 
     @Test
@@ -60,5 +60,16 @@ public class ListTest {
         List<String> sortedBookList = lib.getBookList().stream()
                 .sorted().toList();
         assertEquals(sortedBookList, lib.getBookList());
+    }
+
+    @Test
+    public void testAddBookByPos(){
+        lib.addBookByPosition("Dune", 3);
+        assertEquals("Dune", lib.findBookByPosition(2));
+    }
+
+    @Test
+    public void testAddBookByPosInvalid(){
+        lib.addBookByPosition("Invalid Book", 10);
     }
 }

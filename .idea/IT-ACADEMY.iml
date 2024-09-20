@@ -8,5 +8,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="bnorm.junit5.contingent" level="project" />
+    <orderEntry type="library" name="ch.qos.logback.classic" level="project" />
+    <orderEntry type="library" name="slf4j.api" level="project" />
+    <orderEntry type="library" name="junit" level="project" />
   </component>
 </module>

@@ -1,13 +1,9 @@
 package Module4.L1exercise2;
-import Module4_Testing.L1exercise2.CalculateDni;
-import org.junit.Assert;
-import org.junit.Test;
+
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
-import org.junit.jupiter.params.provider.ValueSource;
-
 import static Module4_Testing.L1exercise2.CalculateDni.calculateDniLetter;
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class dniTest {
     @ParameterizedTest

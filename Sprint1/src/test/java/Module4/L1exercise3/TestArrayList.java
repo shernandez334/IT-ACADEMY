@@ -1,9 +1,8 @@
 package Module4.L1exercise3;
-import Module4_Testing.L1exercise3.ArrayListExceptions;
-import org.junit.Test;
 
-import static Module4_Testing.L1exercise3.ArrayListExceptions.listOutOfBounds;
-import static org.junit.Assert.*;
+import Module4_Testing.L1exercise3.ArrayListExceptions;
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
