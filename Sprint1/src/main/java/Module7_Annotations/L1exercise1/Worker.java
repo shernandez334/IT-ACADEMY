@@ -15,5 +15,7 @@ public abstract class Worker {
         return this.pricePerHour;
     }
 
-    public abstract String calculateSalary(int workingHours);
+    public double calculateSalary(int workingHours){
+        return (workingHours * this.pricePerHour);
+    }
 }
