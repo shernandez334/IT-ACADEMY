@@ -1,107 +1,103 @@
-DROP DATABASE IF EXISTS telepizza;
-CREATE DATABASE telepizza;
-USE telepizza;
-
-CREATE TABLE city(
-    city_id int primary key auto_increment,
-    city_name varchar(50) not null
+CREATE TABLE `pizza`(
+    `pizza_id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `product_id` INT NOT NULL,
+    `pizza_category_id` INT NOT NULL
 );
-
-CREATE TABLE locality(
-    locality_id int primary key auto_increment,
-    locality_name varchar(50) not null
+CREATE TABLE `product`(
+    `product_id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `name` VARCHAR(255) NOT NULL,
+    `description` VARCHAR(255) NOT NULL,
+    `image` BLOB NOT NULL,
+    `price` DOUBLE NOT NULL
 );
-
-CREATE TABLE province(
-    province_id int primary key auto_increment,
-    province_name varchar(50) not null
-);
-
-CREATE TABLE address(
-    address_id int primary key auto_increment,
-    address_name varchar(50) not null ,
-    address_number varchar(10) not null,
-    postal_code int not null,
-    city_id int,
-    locality_id int,
-    province_id int,
-    foreign key (city_id) references city(city_id),
-    foreign key (locality_id) references locality(locality_id),
-    foreign key (province_id) references province(province_id)
-);
-
-CREATE TABLE client(
-    client_id int primary key auto_increment,
-    name varchar(50) not null,
-    surnames varchar(50) not null,
-    mobile_phone varchar(50) not null,
-    address_id int,
-    foreign key (address_id) references address(address_id)
-);
-
-CREATE TABLE delivery(
-    delivery_id int primary key auto_increment,
-    address_id int,
-    delivery_time datetime not null
-);
-
-CREATE TABLE employee(
-    employee_id int primary key auto_increment,
-    name varchar(50) not null,
-    surnames varchar(50) not null,
-    nif varchar(12) not null,
-    mobile_phone varchar(50) not null,
-    role enum('cook', 'delivery') not null,
-    delivery_id int,
-    foreign key (delivery_id) references delivery(delivery_id)
-);
-
-CREATE TABLE store(
-    store_id int primary key auto_increment,
-    address_id int,
-    employee_id int,
-    foreign key (address_id) references address(address_id),
-    foreign key (employee_id) references employee(employee_id)
-);
-
 CREATE TABLE `order`(
-    order_id int primary key auto_increment,
-    order_date datetime not null,
-    is_delivery bool not null,
-    total_price int not null,
-    store_id int,
-    client_id int,
-    employee_id int,
-    foreign key (store_id) references store(store_id),
-    foreign key (client_id) references client(client_id),
-    foreign key (employee_id) references employee(employee_id)
+    `order_id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `order_date` DATETIME NOT NULL,
+    `is_delivery` BOOLEAN NOT NULL,
+    `total_price` INT NOT NULL,
+    `store_id` INT NOT NULL,
+    `delivery_id` INT NOT NULL,
+    `client_id` INT NOT NULL,
+    `store_employee_id` INT NOT NULL
 );
-
-CREATE TABLE product(
-    product_id int primary key auto_increment,
-    name varchar(50) not null,
-    description varchar(50) not null,
-    image blob not null,
-    price double not null
+CREATE TABLE `client`(
+    `cliente_id` INT NOT NULL,
+    `name` VARCHAR(255) NOT NULL,
+    `surnames` VARCHAR(255) NOT NULL,
+    `mobile_phone` VARCHAR(255) NOT NULL,
+    `adddress_id` INT NOT NULL,
+    PRIMARY KEY(`cliente_id`)
 );
-
-CREATE TABLE order_item(
-    order_item_id int primary key auto_increment,
-    product_id int,
-    order_id int,
-    foreign key (product_id) references product(product_id),
-    foreign key (order_id) references `order`(order_id)
+CREATE TABLE `store`(
+    `store_id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `address_id` INT NOT NULL
 );
-
-CREATE TABLE pizza_category(
-    pizza_category_id int primary key auto_increment,
-    name varchar(50)
+CREATE TABLE `pizza_category`(
+    `pizza_category_id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `name` INT NOT NULL
 );
-
-CREATE TABLE pizza(
-    pizza_id int primary key auto_increment,
-    product_id int,
-    pizza_category_id int,
-    foreign key (product_id) references product(product_id),
-    foreign key (pizza_category_id) references pizza_category (pizza_category_id)
+CREATE TABLE `store_employee`(
+    `store_employee_id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `store_id` INT NOT NULL,
+    `employee_id` INT NOT NULL
 );
+CREATE TABLE `order_item`(
+    `order_item_id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `product_id` BIGINT NOT NULL,
+    `order_id` BIGINT NOT NULL
+);
+CREATE TABLE `city`(
+    `city_id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `city_name` VARCHAR(255) NOT NULL,
+    `locality` VARCHAR(255) NOT NULL,
+    `province` VARCHAR(255) NOT NULL
+);
+CREATE TABLE `delivery`(
+    `delivery_id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `order_id` BIGINT NOT NULL,
+    `address_id` INT NOT NULL,
+    `delivery_time` DATETIME NOT NULL
+);
+CREATE TABLE `employee`(
+    `employee_id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `name` VARCHAR(255) NOT NULL,
+    `surnames` VARCHAR(255) NOT NULL,
+    `nif` VARCHAR(255) NOT NULL,
+    `mobile_phone` INT NOT NULL,
+    `role (cook, delivery)` ENUM('') NOT NULL
+);
+CREATE TABLE `address`(
+    `address_id` INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `address_name` VARCHAR(255) NOT NULL,
+    `address_number` VARCHAR(255) NOT NULL,
+    `postal_code` INT NOT NULL,
+    `city_id` INT NOT NULL
+);
+ALTER TABLE
+    `store_employee` ADD CONSTRAINT `store_employee_store_id_foreign` FOREIGN KEY(`store_id`) REFERENCES `store`(`store_id`);
+ALTER TABLE
+    `store` ADD CONSTRAINT `store_address_id_foreign` FOREIGN KEY(`address_id`) REFERENCES `address`(`address_id`);
+ALTER TABLE
+    `order_item` ADD CONSTRAINT `order_item_product_id_foreign` FOREIGN KEY(`product_id`) REFERENCES `product`(`product_id`);
+ALTER TABLE
+    `pizza` ADD CONSTRAINT `pizza_pizza_category_id_foreign` FOREIGN KEY(`pizza_category_id`) REFERENCES `pizza_category`(`pizza_category_id`);
+ALTER TABLE
+    `pizza` ADD CONSTRAINT `pizza_product_id_foreign` FOREIGN KEY(`product_id`) REFERENCES `product`(`product_id`);
+ALTER TABLE
+    `delivery` ADD CONSTRAINT `delivery_order_id_foreign` FOREIGN KEY(`order_id`) REFERENCES `order`(`order_id`);
+ALTER TABLE
+    `order` ADD CONSTRAINT `order_store_employee_id_foreign` FOREIGN KEY(`store_employee_id`) REFERENCES `store_employee`(`store_employee_id`);
+ALTER TABLE
+    `store_employee` ADD CONSTRAINT `store_employee_employee_id_foreign` FOREIGN KEY(`employee_id`) REFERENCES `employee`(`employee_id`);
+ALTER TABLE
+    `delivery` ADD CONSTRAINT `delivery_address_id_foreign` FOREIGN KEY(`address_id`) REFERENCES `address`(`address_id`);
+ALTER TABLE
+    `order` ADD CONSTRAINT `order_client_id_foreign` FOREIGN KEY(`client_id`) REFERENCES `client`(`cliente_id`);
+ALTER TABLE
+    `order_item` ADD CONSTRAINT `order_item_order_id_foreign` FOREIGN KEY(`order_id`) REFERENCES `order`(`order_id`);
+ALTER TABLE
+    `client` ADD CONSTRAINT `client_adddress_id_foreign` FOREIGN KEY(`adddress_id`) REFERENCES `address`(`address_id`);
+ALTER TABLE
+    `address` ADD CONSTRAINT `address_city_id_foreign` FOREIGN KEY(`city_id`) REFERENCES `city`(`city_id`);
+ALTER TABLE
+    `order` ADD CONSTRAINT `order_store_id_foreign` FOREIGN KEY(`store_id`) REFERENCES `store`(`store_id`);
