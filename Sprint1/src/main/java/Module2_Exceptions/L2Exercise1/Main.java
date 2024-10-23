@@ -1,4 +1,4 @@
-package Module2_Exceptions.L2Exercise1;
+package Sprint1.src.main.java.Module2_Exceptions.L2Exercise1;
 
 public class Main {
     public static void main(String[] args) {

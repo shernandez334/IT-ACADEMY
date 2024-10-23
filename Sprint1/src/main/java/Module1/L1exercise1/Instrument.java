@@ -1,4 +1,4 @@
-package Module1.L1exercise1;
+package Sprint1.src.main.java.Module1.L1exercise1;
 
 public abstract class Instrument {
     private String name;

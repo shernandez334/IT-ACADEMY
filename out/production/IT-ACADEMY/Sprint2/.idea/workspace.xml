@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f9eac48-5f38-46d1-b915-c15d8de68b94" name="Changes" comment="sql done">
+      <change afterPath="$PROJECT_DIR$/Module4/restaurant_queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/169db461-50c3-48b0-a12b-32de72d3dbb2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/169db461-50c3-48b0-a12b-32de72d3dbb2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2kh0NdqXVgmtaM8uNATlUgp9HTN" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;/Users/santiagohernandez/Library/Application Support/JetBrains/IdeaIC2024.1/consoles/database-tool/9f26d543-3de4-4df5-9d54-fa8f68a3de04/console.sql&quot;: &quot;cul_d_ampolla&quot;,
+    &quot;/Users/santiagohernandez/Library/Application Support/JetBrains/IdeaIC2024.1/consoles/database-tool/e23e6f84-ac3f-4c6d-9d86-4af0ed9b8287/console.sql&quot;: &quot;Cul_d_Ampolla&quot;,
+    &quot;Database Script.glasses_store.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.schema_tienda.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.schema_universidad.sql.executor&quot;: &quot;Run&quot;,
+    &quot;Database Script.university_queries.sql.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;database.query.execution&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ],
+    &quot;RunConfigurationTargetLRU&quot;: [
+      &quot;e12964ca-54ec-4078-b3bb-60568ddb941e&quot;,
+      &quot;43efc2a0-acab-45ef-8c77-82f707928048&quot;,
+      &quot;e70be5ef-babb-4b68-9d37-18a0349af48e&quot;,
+      &quot;15672447-19d6-4116-ae72-da0d4efc1558&quot;,
+      &quot;08c8a33f-c65a-4355-9ab7-13bc60d92da1&quot;
+    ],
+    &quot;com.intellij.ide.scratch.LRUPopupBuilder$1/&quot;: [
+      &quot;MySQL&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Module1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Database Script.schema_tienda.sql">
+    <configuration name="glasses_store.sql" type="DatabaseScript" editBeforeRun="true" temporary="true">
+      <script-file value="$PROJECT_DIR$/Module2/schema_universidad.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="e12964ca-54ec-4078-b3bb-60568ddb941e" />
+      <method v="2" />
+    </configuration>
+    <configuration name="schema_tienda.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/Module2/schema_tienda.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="08c8a33f-c65a-4355-9ab7-13bc60d92da1" />
+      <method v="2" />
+    </configuration>
+    <configuration name="schema_universidad.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/Module2/schema_universidad.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="15672447-19d6-4116-ae72-da0d4efc1558" />
+      <method v="2" />
+    </configuration>
+    <configuration name="university_queries.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+      <script-file value="$PROJECT_DIR$/Module2/schema_universidad.sql" />
+      <script-mode>FILE</script-mode>
+      <data-source id="15672447-19d6-4116-ae72-da0d4efc1558" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f9eac48-5f38-46d1-b915-c15d8de68b94" name="Changes" comment="" />
+      <created>1723720472501</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723720472501</updated>
+      <workItem from="1723803306540" duration="8690000" />
+      <workItem from="1723896597603" duration="104000" />
+      <workItem from="1724077704414" duration="716000" />
+      <workItem from="1724078436272" duration="613000" />
+      <workItem from="1724079736727" duration="635000" />
+      <workItem from="1724080442613" duration="8566000" />
+      <workItem from="1724144730013" duration="57061000" />
+      <workItem from="1724669439381" duration="194000" />
+      <workItem from="1724754614248" duration="99000" />
+      <workItem from="1724754809769" duration="74000" />
+      <workItem from="1724754988796" duration="587000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ds store removal" />
+    <MESSAGE value="sql done" />
+    <option name="LAST_COMMIT_MESSAGE" value="sql done" />
+  </component>
+</project>

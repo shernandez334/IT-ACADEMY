@@ -4,10 +4,10 @@ import java.io.*;
 import java.util.*;
 
 public class Main {
-    static Scanner scanner = new Scanner(System.in);
-    static final String countriesFile = "countries.txt";
-    static final String rankingFile = "ranking.txt";
-    static final int numQuestions = 10;
+    private static Scanner scanner = new Scanner(System.in);
+    private static final String countriesFile = "countries.txt";
+    private static final String rankingFile = "ranking.txt";
+    private static final int numQuestions = 10;
 
     public static void main(String[] args) {
         String user = "";

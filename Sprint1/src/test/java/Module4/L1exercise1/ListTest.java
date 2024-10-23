@@ -70,6 +70,6 @@ public class ListTest {
 
     @Test
     public void testAddBookByPosInvalid(){
-        lib.addBookByPosition("Invalid Book", 10);
+        assertThrows(IndexOutOfBoundsException.class, () ->lib.addBookByPosition("Invalid Book", 10));
     }
 }

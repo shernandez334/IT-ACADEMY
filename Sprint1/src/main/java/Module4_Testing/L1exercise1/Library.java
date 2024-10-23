@@ -33,8 +33,10 @@ public class Library {
         try{
             bookFound = this.bookList.get(pos);
         } catch (IndexOutOfBoundsException e){
-            logger.error("Error: Book position {} (1-based) is out of bounds. List size: {} (0-based). Exception: {}",
+            logger.error("Error: The provided book position {} is invalid. The position must be between 1 " +
+                            "and {} (inclusive), but the list currently has {} books. Exception details: {}",
                     pos, bookList.size(), e.getMessage(), e);
+            throw new IndexOutOfBoundsException("Position " + pos + " is out of bounds. List size is " + bookList.size());
         }
         return bookFound;
     }
@@ -43,8 +45,10 @@ public class Library {
         try {
             bookList.add(pos - 1, bookTitle);
         } catch (IndexOutOfBoundsException e){
-            logger.error("Error: Book position {} (1-based) is out of bounds. List size: {} (0-based). Exception: {}",
+            logger.error("Error: The provided book position {} is invalid. The position must be between 1 " +
+                            "and {} (inclusive), but the list currently has {} books. Exception details: {}",
                     pos, bookList.size(), e.getMessage(), e);
+            throw new IndexOutOfBoundsException("Position " + pos + " is out of bounds. List size is " + bookList.size());
         }
     }
 
